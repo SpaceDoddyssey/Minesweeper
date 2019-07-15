@@ -179,6 +179,7 @@ public class MapAreaController : MonoBehaviour {
 					GameOver = true;
 					targetSquare.SetSprite (tilePool [(int)Sprites.MINE]);
 				} else {
+                    curScore++;
 					if (closeMines == 0) {
 						targetSquare.SetSprite (tilePool [(int)Sprites.BLANK]);
 						// If the tile has no mines adjacent to it, reveal all adjacent tiles 
